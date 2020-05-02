@@ -1,5 +1,6 @@
 @media (max-width: 670px){
     body{
         background-image: url(none);
+        display:flex;
     }
 }
