@@ -74,6 +74,7 @@ table{
     color: #DAE1E7;
     box-shadow: 0 5px #066a74;
     cursor: pointer;
+    transform: 0.5s;
 }
 
 .btn-nomor:active{
