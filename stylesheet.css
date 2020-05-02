@@ -25,7 +25,7 @@ li{
 
 
 .box-display{
-    background-color: #27496d;
+    background-color: #142850;
     width: 300px;
     padding: 25px 25px 5px 25px;
     border-radius: 40px 40px 0px 0px;
@@ -52,7 +52,7 @@ li{
 }
 .box-kalkulator{
     width: 300px;
-    background-color: #142850;
+    background-color: #27496d;
     padding: 10px 25px;
     border-radius: 0px 0px  40px 40px;
     box-shadow: 0 0 7px black;
