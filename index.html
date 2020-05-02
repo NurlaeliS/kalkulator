@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Progate</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<script type="text/javascript">
+    function myclick(a){
+        kalkulator.hasil.value += a;
+    }
+    function samadgn(){
+        kalkulator.hasil.value = eval(kalkulator.hasil.value);
+    }
+    function ac(){
+        kalkulator.hasil.value="";
+    }
+    function hapus(){
+        var dihapus = kalkulator.hasil.value;
+        kalkulator.hasil.value= dihapus.substr(0,dihapus.length-1);
+    }
+    function getHistori(){
+        return document.getElementById("histori-value").innerText;
+    }
+    function printHistori(num){
+        document.getElementById("histori-value").innerText=num;
+    }
+</script>
+<body>
+    <form name="kalkulator">
+    <div class="box">
+        <ul> 
+            <li>
+                <div class="box-display">
+                    <div class="display">
+                       <input type="text" class="hasil" name="hasil"> 
+                    </div>
+                    <p>Progate</p>     
+                </div>
+                <div class="box-kalkulator">    
+                    <table>
+                        <tr>
+                            <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn-nomor ac" type="button" value="AC" onclick="ac ()"></td>
+                            <td><input class="btn-nomor del"  type="button" value="DEL" onclick="hapus ()"></td>
+                            <td><input class="btn-nomor" name="*"  type="button" value="*" onclick="myclick ('*')"></td>
+                            <td><input class="btn-nomor" name="/" type="button" value="/" onclick="myclick ('/')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn-nomor" name="7" type="button" value="7" onclick="myclick ('7')"></td>
+                            <td><input class="btn-nomor" name="8" type="button" value="8" onclick="myclick ('8')"></td>
+                            <td><input class="btn-nomor" name="9" type="button" value="9" onclick="myclick ('9')"></td>
+                            <td><input class="btn-nomor" name="0" type="button" value="+" onclick="myclick ('+')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn-nomor" name="4" type="button" value="4" onclick="myclick ('4')"></td>
+                            <td><input class="btn-nomor" name="5" type="button" value="5" onclick="myclick ('5')"></td>
+                            <td><input class="btn-nomor" name="6" type="button" value="6" onclick="myclick ('6')"></td>
+                            <td><input class="btn-nomor" name="-" type="button" value="-" onclick="myclick ('-')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn-nomor" name="1" type="button" value="1" onclick="myclick ('1')"></td>
+                            <td><input class="btn-nomor" name="2" type="button" value="2" onclick="myclick ('2')"></td>
+                            <td><input class="btn-nomor" name="3" type="button" value="3" onclick="myclick ('3')"></td>
+                            <td rowspan="2">
+                                <input class="btn-nomor smdgn" nama="smdgn" type="button" value="=" onclick="samadgn()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn-nomor" name="0" type="button" value="0" onclick="myclick ('0')"></td>
+                            <td><input class="btn-nomor" name="00" type="button" value="00" onclick="myclick ('00')"></td>
+                            <td><input class="btn-nomor" name="." type="button" value="." onclick="myclick ('.')"></td>
+                        </tr>
+                    </table> 
+                </div>
+            </li>
+        </ul>   
+    </div>
+</form>
+</body>
+</html>
