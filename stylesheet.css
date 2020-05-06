@@ -67,13 +67,13 @@ table{
     padding: 10px;
     margin: 5px;
     width: 50px;
-    background-color: #00909e;
+    background-color: rgb(255, 255, 255);
     border: 0;
     border-radius: 10px;
-    color: #DAE1E7;
-    box-shadow: 0 5px #066a74;
+    color: black;
+    box-shadow: 0 5px grey;
     cursor: pointer;
-    transform: 0.5s;
+    transform: 0.2s;
     font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ table{
 }
 
 .smdgn{
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(29, 28, 28);
     box-shadow: 0 5px rgb(12, 12, 12);
     height: 82px;
     color: #DAE1E7;
