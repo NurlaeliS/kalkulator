@@ -99,3 +99,10 @@ table{
     box-shadow: 0 5px rgb(168, 92, 5);
     color: #DAE1E7;
 }
+
+.footer{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+
+}
